@@ -1,0 +1,26 @@
+{
+    "name": "rickyca/helloworld",
+    "description": "This is a demo to build laravel package using composer",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "anhcv",
+            "email": "anhcv@icitech.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "RickyCA\\HelloWorld\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RickyCA\\HelloWorld\\HelloWorldServiceProvider"
+            ]
+        }
+    }
+}
