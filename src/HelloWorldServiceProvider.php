@@ -24,6 +24,6 @@ class HelloWorldServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/views', 'hello-world');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'hello-world');
     }
 }
